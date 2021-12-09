@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ChiTietDonHangActivity">
+
+    <TableLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <TextView
+                android:textSize="20sp"
+                android:text="Tên khách hàng:"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvtenkhachhangabc"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textSize="25sp"
+                android:hint="Tên khách hàng"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:textSize="20sp"
+                android:text="Số đt:"
+                />
+            <TextView
+                android:id="@+id/tvsdtkhachhang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textSize="25sp"
+                android:hint="sdt"
+                />
+        </TableRow>
+    </TableLayout>
+    <TextView
+
+        android:text="DANH SÁCH SẢN PHẨM ĐÃ ĐẶT"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:background="#feed"
+        android:id="@+id/lvspdamua"
+        android:layout_weight="3"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="25sp"
+
+            android:text="Tổng tiền:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvtongtiendonhang"
+            android:textSize="25sp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
