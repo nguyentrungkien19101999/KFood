@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyShop</string>
+    <string name="title_activity_thong_tin">Map</string>
+
+    <string name="tab_add">Thêm món</string>
+    <string name="tab_delete">Sửa/xóa</string>
+    <string name="tab_basket">Đơn hàng</string>
+
+</resources>
