@@ -7,10 +7,4 @@
         android:icon="@drawable/shoppingcart"
         android:title="Giỏ Hàng"
         app:showAsAction="always" />
-
-    <item
-        android:title="Quản lý đồ ăn"
-        app:showAsAction="never">
-
-    </item>
 </menu>

@@ -18,7 +18,7 @@
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbartrangchinh"
                 app:title="Trang Chủ"
-                android:background="#B71C1C"
+                android:background="#019E35"
                 app:titleTextColor="#ffffff"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize">
@@ -37,7 +37,7 @@
                 android:layout_height="match_parent">
                 <TextView
                     android:text="Có thể bạn thích"
-                    android:textColor="#B71C1C"
+                    android:textColor="#019E35"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     android:layout_width="wrap_content"

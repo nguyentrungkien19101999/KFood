@@ -11,7 +11,7 @@
         android:id="@+id/toolbarGioHang"
         app:title="Giỏ hàng"
         app:titleTextColor="#FFFFFF"
-        android:background="#B71C1C"
+        android:background="#019E35"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     </androidx.appcompat.widget.Toolbar>
@@ -52,22 +52,22 @@
                 android:layout_height="match_parent">
                 <TextView
                     android:id="@+id/tvtongtien"
-                    android:textColor="#B71C1C"
+                    android:textColor="#019E35"
                     android:textSize="20sp"
                     android:text="Tổng tiền: "
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
             <LinearLayout
-                android:gravity="right|center"
+                android:gravity="center"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent">
                 <TextView
                     android:id="@+id/tvgiagiohang"
-                    android:textColor="#B71C1C"
+                    android:textColor="#019E35"
                     android:textSize="20sp"
-                    android:text="#B71C1C"
+                    android:text="#019E35"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
 
@@ -79,7 +79,7 @@
     </LinearLayout>
     <Button
         android:textSize="18sp"
-        android:textColor="#B71C1C"
+        android:textColor="#019E35"
         android:text="Thanh Toán Giỏ Hàng"
         android:id="@+id/btnThanhToanGioHang"
         android:layout_weight="1"
@@ -87,7 +87,7 @@
         android:layout_height="0dp" />
     <Button
         android:textSize="18sp"
-        android:textColor="#B71C1C"
+        android:textColor="#019E35"
         android:background="@android:color/transparent"
         android:text="Tiếp tục mua hàng?"
         android:id="@+id/btnTiepTucMuaHang"
