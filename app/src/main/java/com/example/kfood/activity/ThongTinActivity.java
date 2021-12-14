@@ -61,27 +61,27 @@ public class ThongTinActivity extends AppCompatActivity implements OnMapReadyCal
     @Override
     public void onMapReady(GoogleMap googleMap) {
 
-        mMap = googleMap;
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
-            return;
-        }
-        mMap.setMyLocationEnabled(true);
-        // Add a marker in Sydney and move the camera
-        LatLng kfood = new LatLng(20.982172, 105.872425);
-        mMap.addMarker(new MarkerOptions().position(kfood).title("K'Food").snippet("6 - ngõ 147/38\n" +
-                "Phố Triều Khúc\n" +
-                "Tân Triều\n" +
-                "Thanh Trì\n" +
-                "Hà Nội").icon(BitmapDescriptorFactory.defaultMarker()));
-        mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
-        CameraPosition cameraPosition = new CameraPosition.Builder().target(kfood).zoom(20).build();
-        mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+//        mMap = googleMap;
+//        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+//            // TODO: Consider calling
+//            //    ActivityCompat#requestPermissions
+//            // here to request the missing permissions, and then overriding
+//            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+//            //                                          int[] grantResults)
+//            // to handle the case where the user grants the permission. See the documentation
+//            // for ActivityCompat#requestPermissions for more details.
+//            return;
+//        }
+//        mMap.setMyLocationEnabled(true);
+//        // Add a marker in Sydney and move the camera
+//        LatLng kfood = new LatLng(20.982172, 105.872425);
+//        mMap.addMarker(new MarkerOptions().position(kfood).title("K'Food").snippet("6 - ngõ 147/38\n" +
+//                "Phố Triều Khúc\n" +
+//                "Tân Triều\n" +
+//                "Thanh Trì\n" +
+//                "Hà Nội").icon(BitmapDescriptorFactory.defaultMarker()));
+//        mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+//        CameraPosition cameraPosition = new CameraPosition.Builder().target(kfood).zoom(20).build();
+//        mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
     }
 }

@@ -17,8 +17,8 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:id="@+id/edtUser"
-        android:hint="Tài khoản"/>
+        android:id="@+id/edtEmail"
+        android:hint="Email"/>
     <EditText
         android:layout_width="350dp"
         android:layout_height="wrap_content"
@@ -26,6 +26,14 @@
         android:id="@+id/edtPassword"
         android:inputType="textPassword"
         android:hint="Mật khẩu"/>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/edtRePassword"
+        android:inputType="textPassword"
+        android:hint="Nhập lại mật khẩu"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -36,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tv"
-            android:text="Chưa có tài khoản? "
+            android:text="Đã có tài khoản? "
             android:textColor="@color/black"
             android:layout_marginStart="150dp"
             android:textSize="15sp"/>
@@ -44,7 +52,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/tvSigup"
-            android:text=" Đăng ký"
+            android:text=" Đăng nhập"
             android:textColor="@color/blue"
             android:textSize="15sp"
             android:textStyle="italic|bold"/>
@@ -53,8 +61,8 @@
     <Button
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:id="@+id/btnLogin"
+        android:id="@+id/btnSignUp"
         android:layout_marginTop="20dp"
-        android:text="Đăng nhập"
+        android:text="Đăng Ký"
         android:background="#BFE6F8"/>
 </LinearLayout>

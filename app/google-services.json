@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "986984531029",
+    "project_id": "kfood-deb37",
+    "storage_bucket": "kfood-deb37.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:986984531029:android:8b1e7f8c05dae3820b80dc",
+        "android_client_info": {
+          "package_name": "com.example.kfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "986984531029-bt73b35tjovr8nno8bqd5uk2j3i7g33o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAAbAqpIBPGknwWevUFfLR7tliWx84glc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "986984531029-bt73b35tjovr8nno8bqd5uk2j3i7g33o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
