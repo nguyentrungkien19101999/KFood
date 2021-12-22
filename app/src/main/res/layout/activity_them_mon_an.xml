@@ -20,11 +20,10 @@
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbarthemdoan"
                 app:title="Thêm đồ ăn"
-                android:background="#B71C1C"
+                android:background="#019E35"
                 app:titleTextColor="#ffffff"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize">
-
             </androidx.appcompat.widget.Toolbar>
 
         </com.google.android.material.appbar.AppBarLayout>
