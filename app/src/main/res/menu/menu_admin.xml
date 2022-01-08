@@ -2,8 +2,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:title="Xem đơn hàng" android:icon="@drawable/shoppingcart"
-        app:showAsAction="always" android:id="@+id/menuadmincart"
+    <item android:title="Đăng xuất" android:icon="@drawable/ic_logout"
+        app:showAsAction="always" android:id="@+id/menulogout"
         >
 
     </item>

@@ -1,6 +1,6 @@
 package com.example.kfood.Service;
 
-public class APIService {
+public interface APIService {
 
     /*private static String baseURL = "https://devandroi.000webhostapp.com/Server/";*/
     public static String baseURL ="http://192.168.108.100/server/";

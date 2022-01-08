@@ -36,6 +36,7 @@ import com.example.kfood.model.Sanpham;
 import com.example.kfood.until.CheckConnect;
 import com.example.kfood.until.Sever;
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -163,7 +164,17 @@ public class MainActivity extends AppCompatActivity {
                         }
                         drawerLayout.closeDrawer(GravityCompat.START);
                         break;
-
+                    case 5:
+                        if(CheckConnect.haveNetworkConnection(getApplicationContext())){
+                            FirebaseAuth.getInstance().signOut();
+                            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                            startActivity(intent);
+                            finish();
+                        }else{
+                            CheckConnect.showToast(getApplicationContext(),"Bạn hãy kiểm tra lại kết nối");
+                        }
+                        drawerLayout.closeDrawer(GravityCompat.START);
+                        break;
                 }
             }
         });
@@ -231,6 +242,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                     mangloaisp.add(3,new Loaisp(3,"Liên Hệ","http://192.168.108.100/server/image/lienhe.png"));
                     mangloaisp.add(4,new Loaisp(4,"Thông Tin","http://192.168.108.100/server/image/thongtin.png"));
+                    mangloaisp.add(5,new Loaisp(5,"Đăng Xuất","http://192.168.108.100/server/image/logout.jfif"));
                 }
              }
          }, new Response.ErrorListener() {
