@@ -9,7 +9,7 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarChiTietSanPham"
         app:title="Chi tiết sản phẩm"
-        android:background="#B71C1C"
+        android:background="#019E35"
         app:titleTextColor="#FFFFFF"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize">

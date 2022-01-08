@@ -229,8 +229,8 @@ public class MainActivity extends AppCompatActivity {
                             e.printStackTrace();
                         }
                     }
-                    mangloaisp.add(3,new Loaisp(0,"Liên Hệ","http://192.168.0.104/server/image/lienhe.png"));
-                    mangloaisp.add(4,new Loaisp(0,"Thông Tin","http://192.168.0.104/server/image/thongtin.png"));
+                    mangloaisp.add(3,new Loaisp(3,"Liên Hệ","http://192.168.108.100/server/image/lienhe.png"));
+                    mangloaisp.add(4,new Loaisp(4,"Thông Tin","http://192.168.108.100/server/image/thongtin.png"));
                 }
              }
          }, new Response.ErrorListener() {

@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context=".activity.DoUongActivity">
     <androidx.appcompat.widget.Toolbar
-        android:background="#B71C1C"
+        android:background="#019E35"
         app:titleTextColor="#FFFFFF"
         app:title="Đồ uống"
         android:layout_width="match_parent"

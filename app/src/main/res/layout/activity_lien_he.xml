@@ -6,7 +6,7 @@
     android:orientation="vertical">
     <androidx.appcompat.widget.Toolbar
         app:titleTextColor="#ffffff"
-        android:background="#B71C1C"
+        android:background="#019E35"
         app:title="Liên Hệ"
         android:id="@+id/toolbarLienHe"
         android:layout_width="match_parent"

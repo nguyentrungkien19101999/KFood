@@ -1,11 +1,14 @@
 package com.example.kfood.activity;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -79,11 +82,8 @@ public class ThongTinKhachHangActivity extends AppCompatActivity {
                                     public void onResponse(String response) {
                                         if (response != null) {
                                             MainActivity.manggiohang.clear();
-                                            CheckConnect.showToast(getApplicationContext(), "bạn đã thêm dữ liệu giỏ hàng thành công");
-                                            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                                            startActivity(intent);
-                                            CheckConnect.showToast(getApplicationContext(), "Mời bạn tiếp tục mua hàng");
-                                            finish();
+                                            showDialog();
+                                            //CheckConnect.showToast(getApplicationContext(), "Bạn đã thêm dữ liệu giỏ hàng thành công");
                                         } else {
                                             CheckConnect.showToast(getApplicationContext(), "Dữ liệu giỏ hàng của bạn bị lỗi");
                                         }
@@ -150,5 +150,25 @@ public class ThongTinKhachHangActivity extends AppCompatActivity {
         btnXacNhan = findViewById(R.id.btnXacNhanThongTinKhachHang);
         btnTroVe = findViewById(R.id.btnTroVe);
         toolbar = findViewById(R.id.toolbarThongTinKhachHang);
+    }
+
+    public void showDialog(){
+        Dialog dialog = new Dialog(ThongTinKhachHangActivity.this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setCancelable(false);
+        dialog.setContentView(R.layout.dialog);
+
+        Button dialogButton = (Button) dialog.findViewById(R.id.btn_dialog);
+        dialogButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+                CheckConnect.showToast(getApplicationContext(), "Mời bạn tiếp tục mua hàng");
+                finish();
+            }
+        });
+        dialog.show();
     }
 }

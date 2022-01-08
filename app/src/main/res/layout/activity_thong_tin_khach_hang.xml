@@ -9,15 +9,13 @@
     tools:context=".activity.ThongTinKhachHangActivity">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarThongTinKhachHang"
-        android:background="#B71C1C"
+        android:background="#019E35"
         app:title="Thông tin khách hàng"
         app:titleTextColor="#FFFFFF"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize">
 
     </androidx.appcompat.widget.Toolbar>
-
-
 
     <TextView
         android:layout_gravity="center"
@@ -46,6 +44,7 @@
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <EditText
             android:layout_margin="5dp"
             android:id="@+id/edtDienThoaiKhachHang"
@@ -62,7 +61,7 @@
             android:layout_margin="5dp"
             android:id="@+id/edtEmailKhachHang"
             android:inputType="textEmailAddress"
-            android:hint="Nhập email khách hàng"
+            android:hint="Nhập địa chỉ khách hàng"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -73,8 +72,8 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <Button
 
+        <Button
             android:layout_marginRight="70dp"
             android:background="#B71C1C"
             android:textColor="#ffffff"
@@ -84,8 +83,8 @@
             android:text="Xác nhận"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-        <Button
 
+        <Button
             android:background="#B71C1C"
             android:textColor="#ffffff"
             android:padding="10dp"

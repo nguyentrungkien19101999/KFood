@@ -102,8 +102,6 @@ public class EditFoodAdapter extends RecyclerView.Adapter<EditFoodAdapter.ViewHo
             });
         }
 
-
-
         void xacNhanXoa(final String id, String ten, final String hinhanh){
             AlertDialog.Builder alertdialog = new AlertDialog.Builder(context);
             alertdialog.setTitle("Thông báo!");
@@ -121,19 +119,21 @@ public class EditFoodAdapter extends RecyclerView.Adapter<EditFoodAdapter.ViewHo
                         public void onResponse(Call<String> call, Response<String> response) {
                             Log.e("DELETE", response.body());
                             if (response.body().trim().equals("success")){
-                                Toast.makeText(context, "Không thể xóa", Toast.LENGTH_SHORT).show();
-                                dialog.dismiss();
-                            }else {
                                 Toast.makeText(context, "Xóa thành công", Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(context, AdminActivity.class);
                                 context.startActivity(intent);
-
+                            }else {
+                                Toast.makeText(context, "Không thể xóa", Toast.LENGTH_SHORT).show();
+                                dialog.dismiss();
                             }
                         }
 
                         @Override
                         public void onFailure(Call<String> call, Throwable t) {
-                            Toast.makeText(context, "Kiểm tra lại kết nối", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(context, "Xóa thành công", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(context, AdminActivity.class);
+                            context.startActivity(intent);
+                            //Toast.makeText(context, "Kiểm tra lại kết nối", Toast.LENGTH_SHORT).show();
                         }
                     });
                 }

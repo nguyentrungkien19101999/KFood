@@ -11,8 +11,7 @@ import com.example.kfood.R;
 
 public class LienHeActivity extends AppCompatActivity {
     Toolbar toolbarlienhe;
-
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -176,7 +176,6 @@ public class DoAnActivity extends AppCompatActivity {
         requestQueue.add(stringRequest);
     }
 
-
     private void ActionToolbar() {
         setSupportActionBar(toolbardoan);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -220,7 +219,7 @@ public class DoAnActivity extends AppCompatActivity {
                         isfull = false;
                     }else {
                         lvdoan.removeFooterView(footerView);
-                        CheckConnect.showToast(getApplicationContext(),"Dã hết dữ liệu");
+                        CheckConnect.showToast(getApplicationContext(),"Đã hết dữ liệu");
                         isfull = true;
                     }
 
