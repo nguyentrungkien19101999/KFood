@@ -48,10 +48,9 @@ public class AdminActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Intent intent;
         switch (item.getItemId()){
             case R.id.menulogout:
-                intent = new Intent(getApplicationContext(),LoginActivity.class);
+                Intent intent = new Intent(getApplication(),LoginActivity.class);
                 startActivity(intent);
                 finish();
                 break;

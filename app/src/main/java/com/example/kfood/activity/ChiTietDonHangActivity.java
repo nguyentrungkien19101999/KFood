@@ -43,6 +43,7 @@ public class ChiTietDonHangActivity extends AppCompatActivity {
         Anhxa();
         txtTenkhachhang.setText(donHang.getTenkhachhang().toString());
         txtSodienthoai.setText(donHang.getSdt().toString());
+        txtDiaChi.setText(donHang.getEmail().toString());
         getData();
         //Log.e("SIZE", arrChiTietDonHang.size()+" sdfghhg");
         /*long tongtien = 0;
@@ -85,7 +86,6 @@ public class ChiTietDonHangActivity extends AppCompatActivity {
         txtDiaChi = findViewById(R.id.tvdiachikhachhang);
         txtTongtien = findViewById(R.id.tvtongtiendonhang);
         lvSanphamdamua = findViewById(R.id.lvspdamua);
-
     }
 
 }
