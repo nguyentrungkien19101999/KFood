@@ -42,7 +42,6 @@ public class EditActivity extends AppCompatActivity {
         String anh = sp.getString("anh");
         id = sp.getString("id");
 
-
         anhXa();
         Picasso.with(getApplicationContext()).load(anh).into(imganh);
         edten.setText(ten);

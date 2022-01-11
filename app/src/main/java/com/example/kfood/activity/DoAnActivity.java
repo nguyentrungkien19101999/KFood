@@ -99,9 +99,7 @@ public class DoAnActivity extends AppCompatActivity {
         });
         lvdoan.setOnScrollListener(new AbsListView.OnScrollListener() {
             @Override
-            public void onScrollStateChanged(AbsListView view, int scrollState) {
-
-            }
+            public void onScrollStateChanged(AbsListView view, int scrollState) {}
 
             @Override
             public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
@@ -146,18 +144,12 @@ public class DoAnActivity extends AppCompatActivity {
                             MotaDoan = jsonObject.getString("motasp");
                             Idspdoan = jsonObject.getInt("idsanpham");
                             mangdoan.add(new Sanpham(id,TenDoan,GiaDoan,HinhanhDoan,MotaDoan, Idspdoan));
-
-
                         }
                         doanAdapter.notifyDataSetChanged();
-
-
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
                 }
-
-
             }
         }, new Response.ErrorListener() {
             @Override
@@ -211,7 +203,6 @@ public class DoAnActivity extends AppCompatActivity {
                     lvdoan.addFooterView(footerView);
                     break;
                 case 1:
-
                     if (mangdoan.size() > size){
                         GetData(++page);
                         isLoading = false;
@@ -222,7 +213,6 @@ public class DoAnActivity extends AppCompatActivity {
                         CheckConnect.showToast(getApplicationContext(),"Đã hết dữ liệu");
                         isfull = true;
                     }
-
                     break;
             }
             super.handleMessage(msg);

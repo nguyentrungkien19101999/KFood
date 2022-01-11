@@ -5,22 +5,16 @@ import com.google.gson.annotations.SerializedName;
 
 public class ChiTietDonHang {
 
-@SerializedName("Id")
 @Expose
 private String id;
-@SerializedName("Madonhang")
 @Expose
 private String madonhang;
-@SerializedName("Masanpham")
 @Expose
 private String masanpham;
-@SerializedName("Tensanpham")
 @Expose
 private String tensanpham;
-@SerializedName("Giasanpham")
 @Expose
 private String giasanpham;
-@SerializedName("Soluongsanpham")
 @Expose
 private String soluongsanpham;
 

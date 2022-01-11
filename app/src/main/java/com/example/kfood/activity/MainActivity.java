@@ -52,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
     ListView listView_trangchu;
     DrawerLayout drawerLayout;
 
-
     ArrayList<Loaisp> mangloaisp;
     LoaispAdapter loaispAdapter;
     int id=0;
@@ -62,9 +61,6 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<Sanpham> mangsanpham;
     SanPhamAdapter sanPhamAdapter;
 
-   /* ArrayList<Sanpham> mangsanpham;
-    SanPhamAdapter sanPhamAdapter;
-    */
    public static ArrayList<Giohang> manggiohang;
 
 
@@ -157,15 +153,6 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 4:
                         if(CheckConnect.haveNetworkConnection(getApplicationContext())){
-                            Intent intent = new Intent(MainActivity.this, ThongTinActivity.class);
-                            startActivity(intent);
-                        }else{
-                            CheckConnect.showToast(getApplicationContext(),"Bạn hãy kiểm tra lại kết nối");
-                        }
-                        drawerLayout.closeDrawer(GravityCompat.START);
-                        break;
-                    case 5:
-                        if(CheckConnect.haveNetworkConnection(getApplicationContext())){
                             FirebaseAuth.getInstance().signOut();
                             Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                             startActivity(intent);
@@ -221,7 +208,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
     private void LayDLloaisp() {
          RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
          JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Sever.duongdanloaisp, new Response.Listener<JSONArray>() {
@@ -241,8 +227,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
                     mangloaisp.add(3,new Loaisp(3,"Liên Hệ","http://192.168.108.100/server/image/lienhe.png"));
-                    mangloaisp.add(4,new Loaisp(4,"Thông Tin","http://192.168.108.100/server/image/thongtin.png"));
-                    mangloaisp.add(5,new Loaisp(5,"Đăng Xuất","http://192.168.108.100/server/image/logout.jfif"));
+                    mangloaisp.add(4,new Loaisp(4,"Đăng Xuất","http://192.168.108.100/server/image/logout.jfif"));
                 }
              }
          }, new Response.ErrorListener() {

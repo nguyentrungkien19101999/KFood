@@ -13,7 +13,6 @@ import com.example.kfood.R;
 import com.example.kfood.Service.APIService;
 import com.example.kfood.Service.DataService;
 import com.example.kfood.adapter.DonHangAdapter;
-import com.example.kfood.model.DonHang;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,7 +45,6 @@ public class XemDonHangActivivty extends AppCompatActivity {
             }
         });
     }
-
 
     private void getData() {
         list = new ArrayList<>();

@@ -24,7 +24,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class ChiTietDonHangActivity extends AppCompatActivity {
-    TextView txtTenkhachhang, txtSodienthoai, txtTongtien;
+    TextView txtTenkhachhang, txtSodienthoai, txtTongtien, txtDiaChi;
     ListView lvSanphamdamua;
 
     ArrayList<ChiTietDonHang> arrChiTietDonHang;
@@ -82,6 +82,7 @@ public class ChiTietDonHangActivity extends AppCompatActivity {
     private void Anhxa() {
         txtTenkhachhang = findViewById(R.id.tvtenkhachhangabc);
         txtSodienthoai = findViewById(R.id.tvsdtkhachhang);
+        txtDiaChi = findViewById(R.id.tvdiachikhachhang);
         txtTongtien = findViewById(R.id.tvtongtiendonhang);
         lvSanphamdamua = findViewById(R.id.lvspdamua);
 

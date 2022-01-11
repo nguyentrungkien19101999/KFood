@@ -33,7 +33,6 @@ public class SplashActivity extends AppCompatActivity {
         }else {
             Toast.makeText(this, "Please Connect to network!", Toast.LENGTH_SHORT).show();
         }
-        
     }
     
     private boolean isConnected(){

@@ -59,8 +59,6 @@ public class DoUongActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_do_uong);
 
-        //Toast.makeText(this, "hâm....@@@@@@@", Toast.LENGTH_SHORT).show();
-
         lvDouong = findViewById(R.id.listviewdouong);
         toolbarDouong = findViewById(R.id.toolbardouong);
         addActionBar();
@@ -68,8 +66,6 @@ public class DoUongActivity extends AppCompatActivity {
         //add footerView
         footerView = LayoutInflater.from(getApplicationContext()).inflate(R.layout.progressbar,null);
         myHandler = new MyHandler();
-
-
 
         //lay id san pham
         Intent intent = getIntent();
@@ -83,10 +79,8 @@ public class DoUongActivity extends AppCompatActivity {
 
         GetDuLieuSanPham(page);
         LoadMoreData();
-
-
-
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu, menu);
@@ -103,7 +97,6 @@ public class DoUongActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-
     public void addActionBar(){
         setSupportActionBar(toolbarDouong);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -114,6 +107,7 @@ public class DoUongActivity extends AppCompatActivity {
             }
         });
     }
+
     public class MyHandler extends Handler {
         @Override
         public void handleMessage(Message msg) {
@@ -186,7 +180,6 @@ public class DoUongActivity extends AppCompatActivity {
                 }
             }
         });
-
     }
 
     public void GetDuLieuSanPham(int Page){
@@ -207,16 +200,7 @@ public class DoUongActivity extends AppCompatActivity {
                     try {
                         JSONArray jsonArray = new JSONArray(response);
                         for (int i =0;i<jsonArray.length();i++){
-                            //JSONObject jsonObject = (JSONObject) jsonArray.get(i);
                             JSONObject jsonObject = jsonArray.getJSONObject(i);
-                            /*int id = jsonObject.getInt("id");
-                            String tensp= jsonObject.getString("tensp");
-                            Integer giasp = jsonObject.getInt("giasp");
-                            String hinhanhsp = jsonObject.getString("hinhanhsp");
-                            String motasp = jsonObject.getString("motasp");
-                            int idsanpham = jsonObject.getInt("idsanpham");
-                            mangDouong.add(new Sanpham(id,tensp,giasp,hinhanhsp,motasp,idsanpham));
-                            results.add(new Sanpham(id,tensp,giasp,hinhanhsp,motasp,idsanpham));*/
                             Id = jsonObject.getInt("id");
                             TenDouong= jsonObject.getString("tensp");
                             GiaDouong = jsonObject.getInt("giasp");
@@ -229,19 +213,11 @@ public class DoUongActivity extends AppCompatActivity {
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
-                }/*else {
-                    limitData = true;
-                    lvDouong.removeFooterView(footerView);
-                    //  CheckConnection.ShowToast_Short(getApplicationContext(),"Đã hết dữ liệu!");
-
-                }*/
-
+                }
             }
         }, new Response.ErrorListener() {
             @Override
-            public void onErrorResponse(VolleyError error) {
-
-            }
+            public void onErrorResponse(VolleyError error) {}
         }){
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
@@ -251,9 +227,6 @@ public class DoUongActivity extends AppCompatActivity {
                 return hashMap;
             }
         };
-
         requestQueue.add(stringRequest);
-
-
     }
 }

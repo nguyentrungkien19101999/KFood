@@ -50,7 +50,6 @@ public class ThemMonAnActivity extends AppCompatActivity {
     String mota;
     String idmasp;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,10 +57,7 @@ public class ThemMonAnActivity extends AppCompatActivity {
 
         anhxa();
         onClick();
-
     }
-
-
 
     private void onClick() {
         imganh.setOnClickListener(new View.OnClickListener() {

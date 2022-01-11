@@ -43,6 +43,21 @@
                 android:hint="sdt"
                 />
         </TableRow>
+        <TableRow>
+            <TextView
+                android:textSize="20sp"
+                android:text="Địa chỉ:"
+                />
+            <TextView
+                android:id="@+id/tvdiachikhachhang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp"
+                android:textSize="25sp"
+                android:hint="Địa chỉ"
+                />
+        </TableRow>
     </TableLayout>
     <TextView
 

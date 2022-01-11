@@ -96,7 +96,6 @@ public class GioHangActivity extends AppCompatActivity {
                 return true;
             }
         });
-
     }
 
     public static void EventUtil() {
@@ -134,7 +133,6 @@ public class GioHangActivity extends AppCompatActivity {
 
             }
         });
-
     }
 
     private void EventButton() {

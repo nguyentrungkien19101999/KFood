@@ -10,8 +10,6 @@ import com.example.kfood.fragment.FragmentBasket;
 import com.example.kfood.fragment.FragmentChangeFood;
 
 public class MyViewPagerAdapter extends FragmentStatePagerAdapter {
-
-
     public MyViewPagerAdapter(FragmentManager fm) {
         super(fm);
     }

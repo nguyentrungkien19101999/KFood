@@ -120,7 +120,6 @@ public class ChiTietSanPham extends AppCompatActivity {
 //                            .placeholder(R.drawable.noimage)
 //                            .error(R.drawable.error)
                            .into(imgChiTietSanPham);
-
     }
 
     private void ActionToolbar() {
@@ -132,7 +131,6 @@ public class ChiTietSanPham extends AppCompatActivity {
                 finish();
             }
         });
-
     }
 
     private void Anhxa() {
@@ -143,6 +141,5 @@ public class ChiTietSanPham extends AppCompatActivity {
         txtMoTaSP = findViewById(R.id.txtMoTaSanPham);
         spinner = findViewById(R.id.spinner);
         btnDatMua = findViewById(R.id.btnDatMua);
-
     }
 }
